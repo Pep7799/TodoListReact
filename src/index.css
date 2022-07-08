@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background: rgb(210, 165, 165);
+  height: 10vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+
+main {
+  
+  height: 75vh;
+  font-size: 25px;
+  color: rgb(13, 13, 147);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+  overflow-x:scroll;
+  width: 100%;
+
+}
+
+footer{
+  height: 5vh;
+  background:rgb(210, 165, 165);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: rgb(151, 186, 191);
+  font-size: 20px;
+}
+
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 48px;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+
+.item > label {
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.item svg:focus, 
+.item svg:hover {
+  color: rgb(117, 228, 107);
+  outline: none;
+}
+
+.add-form {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 0;
+}
+
+
+.add-input {
+  min-width: calc(100% - 60px);
+  background-color: rgb(214, 220, 235);
+  padding: 10px 0;
+  font-size: 20px;  
+  margin-right: 10px;
+  margin-left: 3px;
+  outline: none;  
+
+}
+
+.add-input:hover {
+  background: rgb(117, 228, 107);
+  color: black;
+}
+
+.add-submit {
+  padding: 10px 10px;
+  background: rgb(0, 0, 6);
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+.add-submit:hover {
+  color: black;
+  background: rgb(117, 228, 107);
+}
+
+.all-search{
+  margin-top: 12px;
+  width: 100%;
+  
+  font-size: 20px;  
+
+  outline: none; 
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.search-search {
+  background-color: rgb(249, 251, 255);
+  min-width: calc(100% - 100px);
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+.search-search:hover {
+  background-color: rgb(117, 228, 107);
+  color: black;
+}
